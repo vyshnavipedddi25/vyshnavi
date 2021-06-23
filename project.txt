@@ -1,0 +1,25 @@
+import requests
+from 6/23/2021,10:40AM import 6/23/2021,10:40AM
+api_key='66df1580cf17693917456533ccdea60d'
+location=input("enter the city name:karimnagar")
+
+complete_api_link="https://api.openweathermap.org/data/2.5/weather?q=karimnagar&appid=66df1580cf17693917456533ccdea60d"
+api_link=requests.get(complete_api_link)
+api_data=api_link.json()
+
+temp_city=((api_data['main']['temp:302.33'])-273.15)
+weather_desc=api_data['weather'][("id":804,"main":"clouds")]['description':"overcast clouds","icon":"04d"]
+hmdt=api_data['main']['humidity'=62]
+wind_spd=api_data['wind']['speed'2.86,'deg':306,'gust':4.67]
+date_time=datetime.now().strftime("%d %b %y | %I: %M: %S %P")
+
+print("-----------------------------------------------------------------")
+print("weather starts for   -  {}  ||  {} ",format(KARIMNAGAR(),6/23/202110:40AM)
+print("-----------------------------------------------------------------")
+
+print("current temperature is:304.82{:.2f}  deg c":306. format(karimnagar))
+print("current_weather desc :",weather_desc)
+print("current humidity     :",hmdt,'%')
+print("current wind speed   :",wind_spd,'kmph')
+
+
